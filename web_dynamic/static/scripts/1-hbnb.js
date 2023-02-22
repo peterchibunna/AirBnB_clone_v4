@@ -5,7 +5,7 @@ $( document ).ready(function () {
         if ($(this).is(':checked')) {
       amenityList.push(name);
         } else {
-      amenityList = ls_amen.filter(amen => amen !== name);
+      amenityList = amenityList.filter(amen => amen !== name);
         }
       $('.amenities h4').text(amenityList.join(', '));
     });
